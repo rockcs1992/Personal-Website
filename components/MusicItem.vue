@@ -20,15 +20,12 @@
                   <no-ssr v-if="video">
                     <youtube :video-id="videoId"></youtube>
                   </no-ssr>
-                  <img v-else :src="image" alt="#">
-                  <ul class="list-inline">
-                    <li v-if="!video"><a :href="url" target="_blank">{{ url }}</a></li>
-                    <li>Worked on {{ period }}</li>
-                    <li>Technology: {{ technology }}</li>
-                  </ul>
-                    <no-ssr>
-                      <p v-html="description"></p>
-                    </no-ssr>
+                  <no-ssr v-if="audio">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" :src="audio"></iframe>
+                  </no-ssr>
+                  <no-ssr>
+                    <p v-html="description"></p>
+                  </no-ssr>
                 </div>
               </div>
               <div class="modal-footer">
@@ -46,8 +43,8 @@
 import { getIdFromURL } from 'vue-youtube-embed'
 
 export default {
-  name: 'PortfolioItem',
-  props: ['title', 'category', 'image', 'description', 'url', 'period', 'order', 'technology', 'video'],
+  name: 'MusicItem',
+  props: ['title', 'category', 'image', 'description', 'url', 'period', 'order', 'technology', 'video', 'audio'],
   data () {
     return {
       classObject: {

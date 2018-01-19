@@ -41,15 +41,15 @@ export default {
         },
         {
           title: 'My Projects',
-          path: 'portfolio'
+          path: '/Portfolio'
         },
         {
           title: 'My Music',
-          path: 'music'
+          path: '/Music'
         },
         {
           title: 'Contact',
-          path: 'contact'
+          path: '/Contact'
         }
       ]
     }

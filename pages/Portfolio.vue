@@ -1,5 +1,5 @@
 <template lang="html">
-  <section class="works text-center">
+  <section class="works text-center page">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -7,19 +7,20 @@
 					<ul class="list-inline">
 						<li class="filter active" data-filter=".all">All</li>
 						<li class="filter" data-filter=".web-development">Web Development</li>
-						<li class="filter" data-filter=".music">Music</li>
-						<li class="filter" data-filter=".website-customization">Website Customisation</li>
+						<li class="filter" data-filter=".music">Interactive Music</li>
+						<li class="filter" data-filter=".research">Research</li>
 					</ul>
 				</div>
         <portfolio-item v-for="(project,index) in projects"
           key="index"
           :title="project.title"
-          :img="project.image"
+          :image="project.image"
           :url="project.url"
           :description="project.description"
           :category="project.category"
           :period="project.period"
           :technology="project.technology"
+          :video="project.video"
           :order="index+1">
         </portfolio-item>
       </div>
