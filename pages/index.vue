@@ -9,7 +9,7 @@
 								<h2><a href="#">Welcome to my portfolio website</a></h2>
 							</div>
 							<div class="post-content">
-								<a><img src="img/home-me.jpg" alt="" class="img-responsive"></a>
+								<a><img src="@/static/img/home-me.jpg" alt="" class="img-responsive"></a>
                 <p>Hi I'm Shi Cheng</p>
                 <p>Web developer, foodie, sports lover, and piano player</p>
                 <p>From China, living in Atlanta. Alumni of Georgia Tech Center for Music Technology</p>
