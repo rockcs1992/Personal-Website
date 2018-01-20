@@ -15,6 +15,9 @@ module.exports = {
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=PT+Serif:400,700' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=PT+Sans:400,700' },
+      { rel: 'stylesheet', type: 'text/css', href: 'css/font-awesome.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: 'css/bootstrap.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: 'css/style.css' },
     ],
     script: [
       { src: 'js/modernizr.js' },
@@ -29,7 +32,6 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
-  css: ['assets/css/font-awesome.min.css', 'assets/css/bootstrap.min.css','assets/css/style.css'],
   /*
   ** Build configuration
   */
